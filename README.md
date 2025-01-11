@@ -9,4 +9,4 @@ Before the script can be used, it must be made executable:
    ```
 The script is for people who are too stupid to update their system themselves and will never be able to, for example a friend who claims windows is better than linux, who you are trying to convince to switch to linux but have never been able to. (But there are probably even more ways to use the script.)
 
-For easier execution, I recommend a desktop shortcut, for which I provide icons.
+For easier execution, I recommend a desktop shortcut, for which I provide icons in /Icons .
