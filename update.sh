@@ -13,7 +13,11 @@ get_package_manager() {
       echo "zypper-tumbleweed"
     fi
   elif command -v pacman &> /dev/null; then
-    echo "pacman"
+    if command -v yay &> /dev/null; then
+      echo "pacman-yay"
+    else
+      echo "pacman"
+    fi
   else
     echo "unknown"
   fi
@@ -42,6 +46,10 @@ case "$PACKAGEMANAGER" in
   pacman)
     echo "The system is being updated with Pacman..."
     COMMAND_TO_EXECUTE="sudo pacman -Syu --noconfirm"
+    ;;
+  pacman-yay)
+    echo "The system is being updated with Pacman and Yay..."
+    COMMAND_TO_EXECUTE="sudo pacman -Syu --noconfirm && yay -Sua --noconfirm"
     ;;
   unknown)
     echo "Unknown package manager. No update could be installed."
