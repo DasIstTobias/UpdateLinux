@@ -1,7 +1,7 @@
 # Update Script for Linux
 
 This is a script that automatically opens gnome-terminal, konsole, xterm, lxterminal or terminator when executed, then displays the name of the package manager and performs an update of the system.
-APT, DNF, zypper and Pacman are supported. After the update has been successfully completed, the terminal window is closed.
+APT, DNF, zypper, Pacman and Yay are supported. After the update has been successfully completed, the terminal window is closed.
 
 Before the script can be used, it must be made executable:
    ```bash
